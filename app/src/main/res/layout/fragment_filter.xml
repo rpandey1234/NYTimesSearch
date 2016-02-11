@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_options"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_normal"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/filter_title"
+        android:text="@string/filter_title"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding"
+        />
+
+    <TextView
+        android:id="@+id/datePickerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_title"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:width="@dimen/width"
+        android:text="@string/begin_date"
+        android:layout_marginBottom="@dimen/padding"
+        />
+
+
+    <EditText
+        android:id="@+id/datepickerEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/datePickerTv"
+        android:layout_below="@+id/filter_title"
+        android:paddingBottom="@dimen/padding"
+        />
+
+    <TextView
+        android:id="@+id/sortOrderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePickerTv"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:width="@dimen/width"
+        android:text="@string/sort_order"
+        android:layout_marginBottom="@dimen/padding"
+        />
+
+    <Spinner
+        android:id="@+id/sort_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sortOrderTv"
+        android:layout_toEndOf="@+id/sortOrderTv"
+        android:layout_below="@id/datepickerEt"
+        android:layout_marginBottom="@dimen/padding"
+        />
+
+    <TextView
+        android:id="@+id/newsDesksTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:width="@dimen/width"
+        android:text="@string/news_desks"
+        android:layout_below="@+id/sortOrderTv"
+        android:layout_marginBottom="@dimen/padding"
+        />
+
+    <LinearLayout
+        android:id="@+id/newsDesksValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/newsDesksTv"
+        android:layout_toEndOf="@+id/newsDesksTv"
+        android:layout_below="@+id/sort_order">
+
+        <CheckBox
+            android:id="@+id/chkArts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arts"
+            />
+
+        <CheckBox
+            android:id="@+id/chkStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fashionStyle"
+            />
+
+        <CheckBox
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sports"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:paddingTop="@dimen/padding"
+        android:layout_below="@+id/newsDesksValues"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
