@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NYTimesSearch</string>
+    <string name="app_name">News Search</string>
     <string name="action_settings">Settings</string>
     <string name="search_hint">Enter search query</string>
     <string name="search">Search</string>
