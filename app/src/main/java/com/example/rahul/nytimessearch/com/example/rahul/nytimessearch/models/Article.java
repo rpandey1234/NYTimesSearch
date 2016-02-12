@@ -8,6 +8,7 @@ import org.json.JSONObject;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * A nytimes document model
@@ -44,7 +45,8 @@ public class Article implements Serializable {
             JSONArray multimedia = jsonObject.getJSONArray("multimedia");
             String thumbnail = "";
             if (multimedia.length() > 0) {
-                JSONObject multimediaJson = multimedia.getJSONObject(0);
+                JSONObject multimediaJson = multimedia.getJSONObject(new Random().nextInt(
+                        multimedia.length()));
                 thumbnail = NYTIMES_BASE + multimediaJson.getString("url");
             }
             return new Article(webUrl, headline, thumbnail);

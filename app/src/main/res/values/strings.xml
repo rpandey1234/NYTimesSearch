@@ -5,7 +5,7 @@
     <string name="search">Search</string>
     <string name="title">Title</string>
     <string name="title_activity_article">ArticleActivity</string>
-    <string name="filter_title">Filter Results</string>
+    <string name="filter_title">Filters</string>
     <string name="sort_order">Sort Order</string>
     <string name="news_desks">News Desk Values</string>
     <string name="save">Save</string>
@@ -14,8 +14,10 @@
     <string name="fashionStyle">Fashion and Style</string>
     <string name="begin_date">Begin Date</string>
     <string name="android">Android</string>
+    <string name="share">Share</string>
 
     <string-array name="sort_options">
+        <item></item>
         <item>Oldest</item>
         <item>Newest</item>
     </string-array>

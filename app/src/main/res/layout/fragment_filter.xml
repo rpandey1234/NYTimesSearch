@@ -41,13 +41,16 @@
         android:layout_toRightOf="@+id/datePickerTv"
         android:layout_below="@+id/filter_title"
         android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding_half"
+        android:paddingStart="@dimen/padding_half"
+        android:layout_marginTop="-20dp"
         />
 
     <TextView
         android:id="@+id/sortOrderTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/datePickerTv"
+        android:layout_below="@id/datepickerEt"
         android:textAlignment="viewEnd"
         android:layout_gravity="end"
         android:width="@dimen/width"
@@ -56,12 +59,14 @@
         />
 
     <Spinner
-        android:id="@+id/sort_order"
+        android:id="@+id/sortOrderSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/sortOrderTv"
         android:layout_toEndOf="@+id/sortOrderTv"
         android:layout_below="@id/datepickerEt"
+        android:paddingLeft="@dimen/padding_half"
+        android:paddingStart="@dimen/padding_half"
         android:layout_marginBottom="@dimen/padding"
         />
 
@@ -73,7 +78,7 @@
         android:layout_gravity="end"
         android:width="@dimen/width"
         android:text="@string/news_desks"
-        android:layout_below="@+id/sortOrderTv"
+        android:layout_below="@+id/sortOrderSpinner"
         android:layout_marginBottom="@dimen/padding"
         />
 
@@ -84,7 +89,9 @@
         android:orientation="vertical"
         android:layout_toRightOf="@+id/newsDesksTv"
         android:layout_toEndOf="@+id/newsDesksTv"
-        android:layout_below="@+id/sort_order">
+        android:layout_below="@+id/sortOrderSpinner"
+        android:paddingLeft="@dimen/padding_half"
+        android:paddingStart="@dimen/padding_half">
 
         <CheckBox
             android:id="@+id/chkArts"
@@ -101,7 +108,7 @@
             />
 
         <CheckBox
-            android:id="@+id/sports"
+            android:id="@+id/chkSports"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sports"
@@ -113,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/save"
-        android:paddingTop="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
         android:layout_below="@+id/newsDesksValues"
         android:layout_centerHorizontal="true"
         />

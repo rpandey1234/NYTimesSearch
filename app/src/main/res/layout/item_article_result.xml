@@ -9,7 +9,8 @@
         android:layout_height="75dp"
         android:id="@+id/ivImage"
         android:src="@mipmap/ic_launcher"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:id="@+id/tvTitle"
